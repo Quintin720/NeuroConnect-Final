@@ -2,13 +2,24 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-white text-center p-6">
-      <div>
-        <Image src="/logo.png" alt="NeuroConnect Logo" width={150} height={150} />
-        <h1 className="text-4xl font-bold mt-4">Welcome to NeuroConnect</h1>
-        <p className="text-lg mt-2">Breaking Barriers to Unlock Unique Autistic Potential</p>
-        <p className="mt-6 text-gray-500">Your Autistic-trained chatbot is coming soon.</p>
+    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-yellow-50 to-white p-8 text-center">
+      <div className="max-w-xl">
+        <Image
+          src="/logo.png"
+          alt="NeuroConnect Logo"
+          width={200}
+          height={200}
+          priority
+        />
+        <h1 className="text-5xl font-extrabold text-yellow-700 mt-6">NeuroConnect</h1>
+        <p className="mt-4 text-xl font-medium text-gray-700 italic">
+          Breaking Barriers to Unlock Unique Autistic Potential
+        </p>
+        <p className="mt-8 text-gray-600">
+          Welcome to our employer and educator hub — your neuroaffirmative resource for
+          understanding, supporting, and celebrating Autistic talent.
+        </p>
       </div>
     </main>
-  )
+  );
 }
