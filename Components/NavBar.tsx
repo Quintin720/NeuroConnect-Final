@@ -1,17 +1,7 @@
-// components/NavBar.tsx
-
-import Link from 'next/link';
-
-const NavBar = () => {
+export default function NavBar() {
   return (
-    <nav style={{ display: 'flex', gap: '1rem', padding: '1rem' }}>
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
-      <Link href="/courses">Courses</Link>
-      <Link href="/chatbot">Chatbot</Link>
-      <Link href="/contact">Contact</Link>
+    <nav style={{ padding: '1rem', background: '#eee' }}>
+      <h3>NeuroConnect</h3>
     </nav>
   );
-};
-
-export default NavBar;
+}
